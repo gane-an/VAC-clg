@@ -28,6 +28,12 @@ nav {
   background: #000;
   color: #fff;
 }
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
 .social i {
   /* display: inline-block; */
   margin-left: 10px;
@@ -39,7 +45,7 @@ nav {
   color: rebeccapurple;
 }
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -52,4 +58,28 @@ footer {
 .prof-img {
   display: grid;
   place-items: center;
+}
+.table-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.table {
+  text-align: center;
+  width: 300px;
+}
+.table,
+.table th,
+.table td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 5px 10px;
+}
+.table tr:nth-child(odd):not(thead tr) {
+  background: #ccc;
 }
